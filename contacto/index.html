@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Fiorenza es un vivero dedicado a la venta de plantas de interior, macetas y sustratos. Te ayudamos a elegir la planta ideal para tu casa u oficina. Nuestros productos son de excelente calidad y al mejor precio. Venta online o presencial"
+    />
+    <meta name="keywords" content="vivero, plantas de interior, macetas, sustratos, cactus, suculentas, potus, sansevieria, contacto" />
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Vivero Fiorenza-Contacto</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="superiorHeader">
+        <div id="logoContainer">
+          <img class="iconoLogo" src="../imagenes/logo.jpg" alt="logo" />
+          <h1 class="logo">Fiorenza</h1>
+        </div>
+        <div class="cart">
+          <img
+            class="iconoCarrito"
+            src="../imagenes/shop-cart.svg"
+            alt="shop-cart"
+          />
+        </div>
+      </div>
+      <nav class="navbar navbar-expand navbar-light fs-3 fw-bold">
+        <div class="container-fluid d-flex justify-content-between navCol">
+          <ul class="navbar-nav pe-5 me-5">
+            <li class="nav-item px-5 ms-5">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link" href="../nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link" href="../productos">Productos</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link" href="../consejos">Consejos</a>
+            </li>
+            <li class="nav-item ps-5">
+              <a class="nav-link" href="contacto">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex pe-5 me-5 navSearch">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success fs-5 botonSearch"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main5">
+      <section class="contactUs">
+        <div class="contactUsTitle">
+          <h1>Contactanos</h1>
+        </div>
+        <div class="contactUsContainer">
+          <div class="contactUsLeft">
+            <div class="contactInfo">
+              <p>Horario de atención: Lunes-Sábados de 09:30 a 17:30 hs.</p>
+              <p>Whatsapp: +54 11 3604 2021</p>
+              <p>Teléfono: 011 4831 4527</p>
+              <p>Mail: contacto@fiorenza.com.ar</p>
+              <p>Dirección: Av. Santa Fe 3950, CABA</p>
+            </div>
+            <div class="googleMap">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7812.583831577794!2d-58.4223941717019!3d-34.58425905256941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58226c85819%3A0xb8eef38ff83ad7aa!2sAv.%20Santa%20Fe%203950%2C%20C1425%20BHB%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1622226870508!5m2!1ses-419!2sar"
+                width="400"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+          <div class="formInfo">
+            <h2>Envianos tu consulta</h2>
+            <fieldset>
+              <form action="" method="POST">
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  required
+                  placeholder="escribí aquí"
+                />
+                <br />
+                <label for="nombre">Apellido</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  required
+                  placeholder="escribí aquí"
+                />
+                <br />
+                <label for="nombre">Mail</label>
+                <input
+                  type="email"
+                  id="nombre"
+                  name="email"
+                  required
+                  placeholder="escribí aquí"
+                />
+                <br />
+                <label for="nombre">Motivo de la consulta</label>
+                <select name="motivo de la consulta" id="motivo de la consulta">
+                  <option value="plantas">Plantas</option>
+                  <option value="macetas">Macetas</option>
+                  <option value="tierra y sustratos">Tierra y sustratos</option>
+                  <option value="Otro">Otro</option>
+                </select>
+                <br />
+                <label for="nombre">Mensaje</label>
+                <br />
+                <textarea class="messageForm"
+                  name="mensaje"
+                  placeholder="escribí aquí"
+                  cols="35"
+                  rows="7"
+                ></textarea>
+                <br />
+                <input class="buttonForm" type="submit" value="ENVIAR" />
+                <input class="buttonForm" type="reset" value="BORRAR TODO" />
+              </form>
+            </fieldset>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container-fluid d-flex align-items-center">
+      <div class="col-md-12 d-flex justify-content-center contenedorRedes">
+        <img class="iconoRedes" src="../imagenes/whatsapp.svg" alt="whatsapp" />
+        <img
+          class="mx-5 iconoRedes"
+          src="../imagenes/facebook.svg"
+          alt="facebook"
+        />
+        <img
+          class="iconoRedes"
+          src="../imagenes/instagram.svg"
+          alt="instagram"
+        />
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

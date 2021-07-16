@@ -1,0 +1,148 @@
+/*********1366x768***********/
+header {
+  width: 100vw;
+  height: 20vh;
+  margin: auto;
+
+  .superiorHeader {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    #logoContainer {
+      margin-left: 6rem;
+      margin-right: 30rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex: 1;
+      .logo {
+        font-weight: 500;
+        font-size: 2.2rem;
+        color: $color-verde-logo;
+        margin-top: 3rem;
+      }
+      .iconoLogo {
+        height: 6vh;
+      }
+    }
+    .cart {
+      margin-right: 7rem;
+      margin-top: 2.5rem;
+      cursor: pointer;
+      .iconoCarrito {
+        height: 5vh;
+      }
+    }
+  }
+
+  nav {
+    height: 10vh;
+    width: 100vw;
+    background-color: $color-naranja;
+    .nav-link {
+      color: $color-verde-oscuro !important;
+      &:hover {
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
+}
+/*********768x1024***********/
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100vw;
+    height: 13vh;
+
+    .superiorHeader {
+      height: 7vh;
+      #logoContainer {
+        margin-left: 5.5rem;
+        .logo {
+          font-weight: 500;
+        }
+        .iconoLogo {
+          height: 5vh;
+        }
+      }
+      .cart {
+        margin-right: 6rem;
+        .iconoCarrito {
+          height: 4vh;
+        }
+      }
+    }
+
+    .navbar {
+      height: 6vh;
+      padding-left: 1.8rem;
+      .nav-item {
+        padding: 0rem !important;
+        font-size: 1.5rem !important;
+      }
+      .contenedorSearch {
+        padding-right: 2rem !important;
+      }
+    }
+  }
+}
+/*********360x740***********/
+@media only screen and (max-width: 360px) {
+  header {
+    width: 100vw;
+    height: 13vh;
+
+    .superiorHeader {
+      height: 7vh;
+      margin-bottom: 1rem;
+      #logoContainer {
+        margin-left: 2.5rem;
+        margin-right: 1rem;
+        .logo {
+          font-weight: 500;
+          font-size: 1.9rem;
+        }
+        .iconoLogo {
+          height: 4vh;
+          margin-top: 1rem;
+        }
+      }
+      .cart {
+        margin-right: 3rem;
+        .iconoCarrito {
+          height: 3.5vh;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .navbar {
+      height: 10vh;
+      padding: 0rem;
+      .navCol {
+        height: 8vh;
+        display: flex;
+        flex-direction: column;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        .navbar-nav {
+          padding-right: 0.4rem !important;
+
+          .nav-item {
+            font-size: 1.15rem !important;
+          }
+        }
+        .navSearch {
+          padding-right: 0rem !important;
+          padding-left: 3rem;
+          height: 3vh;
+          .botonSearch {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

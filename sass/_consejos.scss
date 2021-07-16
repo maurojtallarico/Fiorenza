@@ -1,0 +1,138 @@
+/*********1366x768***********/
+.main4 {
+  height: 123vh;
+  width: 100vw;
+  .main4__tips {
+    width: 90vw;
+    height: 125vh;
+    margin: 6rem auto 0rem auto;
+    color: $color-verde-oscuro;
+    font-size: 1.6rem;
+    h1 {
+      padding-bottom: 1rem;
+    }
+    .main4__tips__tip1 {
+      border: 0.3rem solid $color-naranja;
+      margin-bottom: 2rem;
+      padding: 3rem;
+      display: flex;
+      flex-direction: row;
+      background: linear-gradient(to right, $color-gradiente-consejos);
+      .main4__tips__tip1__text1 {
+        padding-left: 3rem;
+      }
+      .main4__tips__tip1__image1 {
+        height: 45vh;
+      }
+    }
+    .main4__tips__tip2 {
+      border: 0.3rem solid $color-naranja;
+      padding: 3rem;
+      display: flex;
+      flex-direction: row;
+      background: linear-gradient(to left, $color-gradiente-consejos);
+      .main4__tips__tip2__text2 {
+        padding-right: 3rem;
+      }
+      .main4__tips__tip2__image2 {
+        height: 45vh;
+      }
+    }
+  }
+  .readMore {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 400;
+    background: linear-gradient($color-gradiente-boton);
+    cursor: pointer;
+    padding: 0.4rem;
+    box-shadow: 0rem 0.8rem 1.5rem rgba(0, 0, 0, 0.5);
+  }
+  .readMore:hover {
+    transform: scale(1.1, 1.1);
+    transition-duration: 1s;
+  }
+}
+/**********768x1024***********/
+@media only screen and (max-width: 768px) {
+  .main4 {
+    height: 123vh;
+    width: 100vw;
+    .main4__tips {
+      width: 85vw;
+      height: 125vh;
+      font-size: 1.5rem;
+      h1 {
+        font-size: 2.3rem;
+      }
+      .main4__tips__tip1 {
+        display: flex;
+        flex-direction: column;
+        .main4__tips__tip1__text1 {
+          padding-left: 0rem;
+          padding-top: 2rem;
+        }
+        .main4__tips__tip1__image1 {
+          height: 28vh;
+        }
+      }
+      .main4__tips__tip2 {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        .main4__tips__tip2__text2 {
+          padding-right: 3rem;
+        }
+        .main4__tips__tip2__image2 {
+          height: 28vh;
+          padding-top: 2rem;
+        }
+      }
+    }
+    .readMore {
+      font-size: 1.6rem;
+    }
+  }
+}
+/*********360x740***********/
+@media only screen and (max-width: 360px) {
+  .main4 {
+    height: 150vh;
+    width: 100vw;
+    .main4__tips {
+      width: 85vw;
+      height: 100vh;
+      font-size: 1.3rem;
+      h1 {
+        font-size: 1.6rem;
+      }
+      .main4__tips__tip1 {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        .main4__tips__tip1__text1 {
+          padding-left: 0rem;
+          padding-top: 2rem;
+        }
+        .main4__tips__tip1__image1 {
+          height: 20vh;
+        }
+      }
+      .main4__tips__tip2 {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        .main4__tips__tip2__text2 {
+          padding-right: 3rem;
+        }
+        .main4__tips__tip2__image2 {
+          height: 20vh;
+          padding-top: 2rem;
+        }
+      }
+    }
+    .readMore {
+      font-size: 1.3rem;
+    }
+  }
+}

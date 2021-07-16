@@ -1,0 +1,28 @@
+/*********1366x768***********/
+footer {
+  width: 100vw;
+  height: 20vh;
+  background-color: $color-naranja;
+  .iconoRedes {
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
+}
+
+/*********768x1024***********/
+@media only screen and (max-width: 768px) {
+}
+footer {
+  height: 18vh;
+  .iconoRedes {
+    height: 4vh !important;
+  }
+}
+/*********360x740***********/
+@media only screen and (max-width: 360px) {
+  .contenedorRedes {
+    margin-left: 10rem;
+  }
+}

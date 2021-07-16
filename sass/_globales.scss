@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+  $color-verde-oscuro:#014d01;
+  $color-crema: #fffcf0;
+  $color-naranja:#ead3aa;
+  $color-verde-logo: rgb(0, 128, 0);
+  $color-gradiente-boton: rgb(12, 92, 12), rgb(22, 165, 22);
+  $color-gradiente-inicio:rgb(41, 7, 4), rgba(240, 169, 61, 0.5);
+  $color-gradiente-productos:rgb(248, 244, 244), rgba(240, 169, 61, 0.5);
+  $color-gradiente-consejos:rgb(230, 209, 179), rgb(238, 233, 225);
+
+
+
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    background-color:$color-crema;
+    font-family: "Montserrat", sans-serif;
+  }
+

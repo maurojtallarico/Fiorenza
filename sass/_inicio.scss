@@ -1,0 +1,203 @@
+/*********1366x768***********/
+.main1 {
+  height: 100vh;
+  width: 100vw;
+  margin-bottom: 16rem;
+
+  .introduction {
+    width: 90vw;
+    height: 70vh;
+    margin: 0rem auto 0rem auto;
+    font-size: 2rem;
+    font-weight: 400;
+    color: $color-verde-oscuro;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    .introText {
+      margin: 3.6rem 4.5rem 3rem 0rem;
+    }
+    .introCoverPic {
+      margin: 4.5rem 0rem 0rem 4.5rem;
+      .indexCoverPic {
+        height: 60vh;
+      }
+      .indexCoverPicR {
+        display: none;
+      }
+    }
+  }
+}
+
+.ourProducts {
+  width: 90vw;
+  height: 60vh;
+  margin: 3rem auto 2rem auto;
+  padding-top: 2rem;
+  .ourProductsTitle h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: $color-verde-oscuro;
+    text-align: center;
+    background-color: $color-naranja;
+    padding: 0.5rem;
+  }
+  .ourProductsPics {
+    height: 30vh;
+    margin: 0rem auto 2rem auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .imgBox {
+      height: 30vh;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      background: radial-gradient($color-gradiente-inicio);
+      .imgTitle {
+        position: absolute;
+        color: white;
+        font-size: 1.4rem;
+      }
+      .imgTitle:hover {
+        transform: scale(1.2, 1.2);
+        transition-duration: 1s;
+      }
+      .imgBoxImg {
+        width: 30vw;
+        height: 30vh;
+        opacity: 1;
+        transition: opacity 0.6s;
+      }
+      .imgBoxImg:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+/**********768x1024***********/
+@media only screen and (max-width: 768px) {
+  .main1 {
+    height: 55vh;
+
+    .introduction {
+      width: 85vw;
+      height: 45vh;
+      margin: 0rem auto 0rem auto;
+
+      .introText {
+        margin: 0rem;
+        padding-bottom: 4rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $color-verde-oscuro;
+        margin: 0rem auto 0rem auto;
+        h1 {
+          font-size: 1.8rem;
+        }
+      }
+      .introCoverPic {
+        margin-left: 0.5rem;
+        margin-top: 0rem;
+        .indexCoverPic {
+          display: none;
+          height: 0vh;
+        }
+        .indexCoverPicR {
+          height: 38vh;
+          padding-left: 4rem;
+          padding-top: 0.5rem;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .ourProducts {
+    width: 84vw;
+    height: 40vh;
+    margin: 0rem auto 0rem auto;
+    .ourProductsTitle h1 {
+      font-size: 1.8rem;
+    }
+    .ourProductsPics {
+      height: 15vh;
+      .imgBox {
+        height: 15vh;
+        .imgTitle {
+          font-size: 1rem;
+        }
+        .imgBoxImg {
+          width: 28vw;
+          height: 15vh;
+        }
+      }
+    }
+  }
+}
+
+/*********360x740***********/
+@media only screen and (max-width: 360px) {
+  .main1 {
+    height: 75vh;
+
+
+    .introduction {
+      width: 85vw;
+      height: 45vh;
+      display: flex;
+      flex-direction: column;
+      .introText {
+        margin-top: 15rem;
+        padding-bottom: 2rem;
+        padding-top: 10rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: $color-verde-oscuro;
+        h1 {
+          font-size: 1.5rem;
+        }
+        p{
+          margin-bottom: 0rem;
+        }
+      }
+      .introCoverPic {
+        width: 85vw;
+        .indexCoverPic {
+          height: 27vh;
+          display: block;
+        }
+        .indexCoverPicR {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .ourProducts {
+    width: 85vw;
+    height: 30vh;
+    margin-top: 20rem;
+    .ourProductsTitle h1 {
+      margin-right: 0.3rem;
+      font-size: 1.6rem;
+    }
+    .ourProductsPics {
+      height: 12vh;
+      width: 85vw;
+      .imgBox {
+        height: 12vh;
+        .imgTitle {
+          font-size: 1rem;
+        }
+        .imgBoxImg {
+          width: 28vw;
+          height: 12vh;
+        }
+      }
+    }
+  }
+}
