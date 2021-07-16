@@ -651,7 +651,7 @@ footer .iconoRedes {
 }
 .relatedProducts .relatedProductsGallery .galleryPic:hover {
   opacity: 0.5;
-  background: radial-gradient(#f8f4f4, rgba(240, 169, 61, 0.5));
+  background: radial-gradient(#f8f4f4, rgba(238, 212, 174, 0.5));
 }
 .relatedProducts .relatedProductsGallery .addToCart {
   color: white;
@@ -829,7 +829,7 @@ footer .iconoRedes {
   padding: 3rem;
   display: flex;
   flex-direction: row;
-  background: linear-gradient(to right, #e6d1b3, #eee9e1);
+  background: linear-gradient(to right, #e6d1b3, #f1e7d7);
 }
 .main4 .main4__tips .main4__tips__tip1 .main4__tips__tip1__text1 {
   padding-left: 3rem;
@@ -842,7 +842,7 @@ footer .iconoRedes {
   padding: 3rem;
   display: flex;
   flex-direction: row;
-  background: linear-gradient(to left, #e6d1b3, #eee9e1);
+  background: linear-gradient(to left, #e6d1b3, #f1e7d7);
 }
 .main4 .main4__tips .main4__tips__tip2 .main4__tips__tip2__text2 {
   padding-right: 3rem;
