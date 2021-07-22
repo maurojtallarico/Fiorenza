@@ -6,8 +6,11 @@
       name="description"
       content="Fiorenza es un vivero dedicado a la venta de plantas de interior, macetas y sustratos. Te ayudamos a elegir la planta ideal para tu casa u oficina. Nuestros productos son de excelente calidad y al mejor precio. Venta online o presencial"
     />
-    <meta name="keywords" content="vivero, plantas de interior, macetas, sustratos, cactus, suculentas, potus, sansevieria, contacto" />
-    <meta name="robots" content="index,follow">
+    <meta
+      name="keywords"
+      content="vivero, plantas de interior, macetas, sustratos, cactus, suculentas, potus, sansevieria, contacto"
+    />
+    <meta name="robots" content="index,follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -108,7 +111,7 @@
                 <label for="nombre">Nombre</label>
                 <input
                   type="text"
-                  id="nombre"
+                  class="formName"
                   name="nombre"
                   required
                   placeholder="escribí aquí"
@@ -117,7 +120,7 @@
                 <label for="nombre">Apellido</label>
                 <input
                   type="text"
-                  id="nombre"
+                  class="formName"
                   name="nombre"
                   required
                   placeholder="escribí aquí"
@@ -126,14 +129,14 @@
                 <label for="nombre">Mail</label>
                 <input
                   type="email"
-                  id="nombre"
+                  class="formMail"
                   name="email"
                   required
                   placeholder="escribí aquí"
                 />
                 <br />
                 <label for="nombre">Motivo de la consulta</label>
-                <select name="motivo de la consulta" id="motivo de la consulta">
+                <select name="motivo de la consulta" class="enquiryReason">
                   <option value="plantas">Plantas</option>
                   <option value="macetas">Macetas</option>
                   <option value="tierra y sustratos">Tierra y sustratos</option>
@@ -142,21 +145,70 @@
                 <br />
                 <label for="nombre">Mensaje</label>
                 <br />
-                <textarea class="messageForm"
+                <textarea
+                  class="messageForm"
                   name="mensaje"
                   placeholder="escribí aquí"
                   cols="35"
-                  rows="7"
+                  rows="5"
                 ></textarea>
                 <br />
-                <input class="buttonForm" type="submit" value="ENVIAR" />
-                <input class="buttonForm" type="reset" value="BORRAR TODO" />
+                <button
+                  type="button"
+                  class="btn btn-primary buttonForm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  Enviar
+                </button>
+                <button type="button" class="btn btn-primary buttonForm">
+                  Borrar todo
+                </button>
               </form>
             </fieldset>
           </div>
         </div>
       </section>
     </main>
+
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Consulta enviada
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Su mensaje fue enviado con éxito. Recibirá una respuesta dentro de
+            las próximas 24 horas hábiles.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Aceptar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="container-fluid d-flex align-items-center">
       <div class="col-md-12 d-flex justify-content-center contenedorRedes">

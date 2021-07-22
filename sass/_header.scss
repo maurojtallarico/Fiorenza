@@ -1,6 +1,5 @@
 /*********1366x768***********/
 header {
-  width: 100vw;
   height: 20vh;
   margin: auto;
 
@@ -38,7 +37,6 @@ header {
 
   nav {
     height: 10vh;
-    width: 100vw;
     background-color: $color-naranja;
     .nav-link {
       color: $color-verde-oscuro !important;
@@ -51,7 +49,6 @@ header {
 /*********768x1024***********/
 @media only screen and (max-width: 768px) {
   header {
-    width: 100vw;
     height: 13vh;
 
     .superiorHeader {
@@ -89,7 +86,6 @@ header {
 /*********360x740***********/
 @media only screen and (max-width: 360px) {
   header {
-    width: 100vw;
     height: 13vh;
 
     .superiorHeader {

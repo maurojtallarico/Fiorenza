@@ -1,8 +1,5 @@
 /*********1366x768***********/
 .main2 {
-  height: 85vh;
-  width: 100vw;
-
   .aboutUs {
     width: 90vw;
     height: 80vh;
@@ -46,9 +43,7 @@
 /**********768x1024***********/
 @media only screen and (max-width: 768px) {
   .main2 {
-    height: 65vh;
-    width: 100vw;
-
+    height: 63vh;
     .aboutUs {
       width: 85vw;
       height: 60vh;
@@ -98,8 +93,6 @@
 @media only screen and (max-width: 360px) {
   .main2 {
     height: 95vh;
-    width: 100vw;
-
     .aboutUs {
       width: 85vw;
       height: 30vh;
@@ -107,7 +100,6 @@
       display: flex;
       flex-direction: column;
     }
-
     .aboutUsInfo {
       font-size: 1.3rem;
       font-weight: 400;
@@ -115,7 +107,6 @@
         font-size: 1.6rem;
       }
     }
-
     .aboutUs1 {
       margin-top: 0rem;
       .gardener {
@@ -123,7 +114,6 @@
         width: 100%;
       }
     }
-
     .greenHouseCentre {
       height: 100%;
       width: 100%;
@@ -134,5 +124,11 @@
       width: 100%;
       display: none;
     }
+  }
+}
+/*********360x640***********/
+@media only screen and (max-height: 640px) {
+  .main2 {
+    height: 110vh;
   }
 }

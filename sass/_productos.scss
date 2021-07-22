@@ -1,8 +1,5 @@
 /*********1366x768***********/
 .main3 {
-  height: 165vh;
-  width: 100vw;
-
   .productDetails {
     width: 90vw;
     height: 100vh;
@@ -49,7 +46,6 @@
         flex-direction: row;
         margin-top: 3rem;
         margin-bottom: 2rem;
-
         .minus,
         .plus {
           width: 2.5rem;
@@ -87,10 +83,10 @@
         padding: 0.5rem;
         background: linear-gradient($color-gradiente-boton);
         box-shadow: 0rem 0.8rem 1.5rem rgba(0, 0, 0, 0.5);
-      }
-      .addToCart:hover {
-        transform: scale(1.1, 1.1);
-        transition-duration: 1s;
+        &:hover {
+          transform: scale(1.1, 1.1);
+          transition-duration: 1s;
+        }
       }
       .warning {
         font-size: 1.3rem;
@@ -101,7 +97,6 @@
     }
   }
 }
-
 .relatedProducts {
   width: 90vw;
   height: 60vh;
@@ -148,10 +143,10 @@
       padding: 0.5rem;
       background: linear-gradient($color-gradiente-boton);
       box-shadow: 0rem 0.8rem 1.5rem rgba(0, 0, 0, 0.5);
-    }
-    .addToCart:hover {
-      transform: scale(1.1, 1.1);
-      transition-duration: 1s;
+      &:hover {
+        transform: scale(1.1, 1.1);
+        transition-duration: 1s;
+      }
     }
   }
 }
@@ -159,8 +154,6 @@
 @media only screen and (max-width: 768px) {
   .main3 {
     height: 125vh;
-    width: 100vw;
-
     .productDetails {
       width: 85vw;
       height: 50vh;
@@ -199,7 +192,6 @@
       }
     }
   }
-
   .relatedProducts {
     width: 85vw;
     margin: 0rem 5rem 0rem 5rem;
@@ -224,13 +216,10 @@
     }
   }
 }
-
 /**********360x740***********/
 @media only screen and (max-width: 360px) {
   .main3 {
     height: 180vh;
-    width: 100vw;
-
     .productDetails {
       width: 85vw;
       height: 100vh;
@@ -247,9 +236,9 @@
           margin-bottom: 2rem;
         }
         .additionalInfo {
-          font-size: 1.3rem;
+          font-size: 1.4rem;
           margin-top: 0.5rem;
-          line-height: 1.3rem;
+          line-height: 1.4rem;
         }
       }
       .mainProductDetails {
@@ -279,7 +268,6 @@
       }
     }
   }
-
   .relatedProducts {
     width: 85vw;
     height: 70vh;
@@ -303,6 +291,17 @@
         font-weight: 400;
         padding: 0.5rem;
       }
+    }
+  }
+}
+/*********360x640***********/
+@media only screen and (max-height: 640px) {
+  .main3 {
+    height: 195vh;
+    .relatedProducts {
+      width: 85vw;
+      height: 10vh;
+      margin: 10rem auto 5rem auto;
     }
   }
 }

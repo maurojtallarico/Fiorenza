@@ -1,7 +1,5 @@
 /*********1366x768***********/
 .main4 {
-  height: 123vh;
-  width: 100vw;
   .main4__tips {
     width: 90vw;
     height: 125vh;
@@ -45,12 +43,13 @@
     font-weight: 400;
     background: linear-gradient($color-gradiente-boton);
     cursor: pointer;
+    border-radius: 1rem;
     padding: 0.4rem;
     box-shadow: 0rem 0.8rem 1.5rem rgba(0, 0, 0, 0.5);
-  }
-  .readMore:hover {
-    transform: scale(1.1, 1.1);
-    transition-duration: 1s;
+    &:hover {
+      transform: scale(1.1, 1.1);
+      transition-duration: 1s;
+    }
   }
 }
 /**********768x1024***********/
@@ -134,5 +133,11 @@
     .readMore {
       font-size: 1.3rem;
     }
+  }
+}
+/*********360x640***********/
+@media only screen and (max-height: 640px) {
+  .main4 {
+    height: 168vh;
   }
 }

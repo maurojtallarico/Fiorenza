@@ -15,7 +15,6 @@ body {
 
 /*********1366x768***********/
 header {
-  width: 100vw;
   height: 20vh;
   margin: auto;
 }
@@ -52,7 +51,6 @@ header .superiorHeader .cart .iconoCarrito {
 }
 header nav {
   height: 10vh;
-  width: 100vw;
   background-color: #ead3aa;
 }
 header nav .nav-link {
@@ -65,7 +63,6 @@ header nav .nav-link:hover {
 /*********768x1024***********/
 @media only screen and (max-width: 768px) {
   header {
-    width: 100vw;
     height: 13vh;
   }
   header .superiorHeader {
@@ -101,7 +98,6 @@ header nav .nav-link:hover {
 /*********360x740***********/
 @media only screen and (max-width: 360px) {
   header {
-    width: 100vw;
     height: 13vh;
   }
   header .superiorHeader {
@@ -184,9 +180,7 @@ footer .iconoRedes {
 }
 /*********1366x768***********/
 .main1 {
-  height: 100vh;
-  width: 100vw;
-  margin-bottom: 16rem;
+  margin-bottom: 10rem;
 }
 .main1 .introduction {
   width: 90vw;
@@ -215,7 +209,7 @@ footer .iconoRedes {
 
 .ourProducts {
   width: 90vw;
-  height: 60vh;
+  height: 40vh;
   margin: 3rem auto 2rem auto;
   padding-top: 2rem;
 }
@@ -265,7 +259,7 @@ footer .iconoRedes {
 /**********768x1024***********/
 @media only screen and (max-width: 768px) {
   .main1 {
-    height: 55vh;
+    height: 60vh;
   }
   .main1 .introduction {
     width: 85vw;
@@ -323,7 +317,7 @@ footer .iconoRedes {
 /*********360x740***********/
 @media only screen and (max-width: 360px) {
   .main1 {
-    height: 75vh;
+    height: 83vh;
   }
   .main1 .introduction {
     width: 85vw;
@@ -381,10 +375,6 @@ footer .iconoRedes {
   }
 }
 /*********1366x768***********/
-.main2 {
-  height: 85vh;
-  width: 100vw;
-}
 .main2 .aboutUs {
   width: 90vw;
   height: 80vh;
@@ -427,8 +417,7 @@ footer .iconoRedes {
 /**********768x1024***********/
 @media only screen and (max-width: 768px) {
   .main2 {
-    height: 65vh;
-    width: 100vw;
+    height: 63vh;
   }
   .main2 .aboutUs {
     width: 85vw;
@@ -478,7 +467,6 @@ footer .iconoRedes {
 @media only screen and (max-width: 360px) {
   .main2 {
     height: 95vh;
-    width: 100vw;
   }
   .main2 .aboutUs {
     width: 85vw;
@@ -512,11 +500,13 @@ footer .iconoRedes {
     display: none;
   }
 }
-/*********1366x768***********/
-.main3 {
-  height: 165vh;
-  width: 100vw;
+/*********360x640***********/
+@media only screen and (max-height: 640px) {
+  .main2 {
+    height: 110vh;
+  }
 }
+/*********1366x768***********/
 .main3 .productDetails {
   width: 90vw;
   height: 100vh;
@@ -672,7 +662,6 @@ footer .iconoRedes {
 @media only screen and (max-width: 768px) {
   .main3 {
     height: 125vh;
-    width: 100vw;
   }
   .main3 .productDetails {
     width: 85vw;
@@ -736,7 +725,6 @@ footer .iconoRedes {
 @media only screen and (max-width: 360px) {
   .main3 {
     height: 180vh;
-    width: 100vw;
   }
   .main3 .productDetails {
     width: 85vw;
@@ -754,9 +742,9 @@ footer .iconoRedes {
     margin-bottom: 2rem;
   }
   .main3 .productDetails .centralPic1 .additionalInfo {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-top: 0.5rem;
-    line-height: 1.3rem;
+    line-height: 1.4rem;
   }
   .main3 .productDetails .mainProductDetails {
     font-size: 2rem;
@@ -808,11 +796,18 @@ footer .iconoRedes {
     padding: 0.5rem;
   }
 }
-/*********1366x768***********/
-.main4 {
-  height: 123vh;
-  width: 100vw;
+/*********360x640***********/
+@media only screen and (max-height: 640px) {
+  .main3 {
+    height: 195vh;
+  }
+  .main3 .relatedProducts {
+    width: 85vw;
+    height: 10vh;
+    margin: 10rem auto 5rem auto;
+  }
 }
+/*********1366x768***********/
 .main4 .main4__tips {
   width: 90vw;
   height: 125vh;
@@ -856,6 +851,7 @@ footer .iconoRedes {
   font-weight: 400;
   background: linear-gradient(#0c5c0c, #16a516);
   cursor: pointer;
+  border-radius: 1rem;
   padding: 0.4rem;
   box-shadow: 0rem 0.8rem 1.5rem rgba(0, 0, 0, 0.5);
 }
@@ -947,11 +943,13 @@ footer .iconoRedes {
     font-size: 1.3rem;
   }
 }
-/*********1366x768***********/
-.main5 {
-  height: 85vh;
-  width: 100vw;
+/*********360x640***********/
+@media only screen and (max-height: 640px) {
+  .main4 {
+    height: 168vh;
+  }
 }
+/*********1366x768***********/
 .main5 .contactUs {
   width: 90vw;
   height: 90vh;
@@ -977,7 +975,7 @@ footer .iconoRedes {
   border: 0.3rem solid #ead3aa;
   padding: 2rem;
   margin: 0rem 2rem 0rem 2rem;
-  height: 65vh;
+  height: 66vh;
   line-height: 2.5rem;
   font-size: 1.5rem;
 }
@@ -987,12 +985,41 @@ footer .iconoRedes {
 .main5 .contactUs .formInfo fieldset {
   line-height: 3rem;
 }
+.main5 .contactUs .formInfo fieldset label {
+  padding-bottom: 1.2rem;
+}
+.main5 .contactUs .formInfo fieldset .formName {
+  padding-right: 8rem;
+}
+.main5 .contactUs .formInfo fieldset .formMail {
+  padding-right: 11rem;
+}
+.main5 .contactUs .formInfo fieldset .enquiryReason {
+  padding-right: 5rem;
+}
+.main5 .contactUs .formInfo fieldset .messageForm {
+  margin-bottom: 1rem;
+}
+.main5 .contactUs .formInfo fieldset .buttonForm {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background: linear-gradient(#0c5c0c, #16a516);
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: 0.8rem;
+  margin-right: 2rem;
+  box-shadow: 0rem 0.8rem 1.5rem rgba(0, 0, 0, 0.5);
+}
+.main5 .contactUs .formInfo fieldset .buttonForm:hover {
+  transform: scale(1.1, 1.1);
+  transition: 1s;
+}
 
 /**********768x1024***********/
 @media only screen and (max-width: 768px) {
   .main5 {
     height: 66vh;
-    width: 100vw;
   }
   .main5 .contactUs {
     width: 85vw;
@@ -1030,24 +1057,34 @@ footer .iconoRedes {
   .main5 .contactUs .formInfo fieldset {
     line-height: 2.5rem;
   }
+  .main5 .contactUs .formInfo fieldset label {
+    padding-bottom: 0.1rem;
+  }
+  .main5 .contactUs .formInfo fieldset .formName {
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+  }
+  .main5 .contactUs .formInfo fieldset .formMail {
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+  }
+  .main5 .contactUs .formInfo fieldset .enquiryReason {
+    padding-right: 8.1rem;
+    margin-bottom: 1rem;
+  }
   .main5 .contactUs .formInfo fieldset .messageForm {
     width: 29vw;
     margin-bottom: 1rem;
   }
   .main5 .contactUs .formInfo fieldset .buttonForm {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 0.5rem;
   }
 }
 /*********360x740***********/
 @media only screen and (max-width: 360px) {
   .main5 {
-    height: 120vh;
-    width: 100vw;
-  }
-  .main5 .contactUs {
-    width: 85vw;
-    height: 80vh;
+    height: 135vh;
   }
   .main5 .contactUs .contactUsTitle {
     margin-bottom: 1rem;
@@ -1073,7 +1110,7 @@ footer .iconoRedes {
     height: 30vh;
   }
   .main5 .contactUs .formInfo {
-    height: 53vh;
+    height: 65vh;
     width: 85vw;
     line-height: 2rem;
     font-size: 1.2rem;
@@ -1085,17 +1122,26 @@ footer .iconoRedes {
   .main5 .contactUs .formInfo fieldset {
     line-height: 2.9rem;
   }
-  .main5 .contactUs .formInfo fieldset #nombre {
-    height: 2.8vh;
+  .main5 .contactUs .formInfo fieldset .formName {
+    padding-right: 3.3rem;
+  }
+  .main5 .contactUs .formInfo fieldset .formMail {
+    padding-right: 5.8rem;
+  }
+  .main5 .contactUs .formInfo fieldset .enquiryReason {
+    padding-right: 0.5rem;
   }
   .main5 .contactUs .formInfo fieldset .messageForm {
     width: 72vw;
-    height: 16vh;
-    margin-bottom: 1rem;
   }
-  .main5 .contactUs .formInfo fieldset .buttonForm {
-    font-size: 1rem;
-    padding: 0.5rem;
+}
+/*********360x640***********/
+@media only screen and (max-height: 640px) {
+  .main5 {
+    height: 140vh;
+  }
+  .main5 .formInfo {
+    height: 72vh !important;
   }
 }
 
