@@ -317,7 +317,7 @@ footer .iconoRedes {
 /*********360x740***********/
 @media only screen and (max-width: 360px) {
   .main1 {
-    height: 83vh;
+    height: 135vh;
   }
   .main1 .introduction {
     width: 85vw;
@@ -335,12 +335,15 @@ footer .iconoRedes {
   }
   .main1 .introduction .introText h1 {
     font-size: 1.5rem;
+    margin-top: 6rem;
   }
   .main1 .introduction .introText p {
     margin-bottom: 0rem;
   }
   .main1 .introduction .introCoverPic {
     width: 85vw;
+    margin-bottom: 4rem;
+    margin-left: 0rem;
   }
   .main1 .introduction .introCoverPic .indexCoverPic {
     height: 27vh;
@@ -353,25 +356,39 @@ footer .iconoRedes {
   .ourProducts {
     width: 85vw;
     height: 30vh;
-    margin-top: 20rem;
+    margin-top: 22rem;
   }
   .ourProducts .ourProductsTitle h1 {
-    margin-right: 0.3rem;
     font-size: 1.6rem;
   }
   .ourProducts .ourProductsPics {
-    height: 12vh;
+    height: 50vh;
     width: 85vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
   .ourProducts .ourProductsPics .imgBox {
-    height: 12vh;
+    height: 20vh;
   }
   .ourProducts .ourProductsPics .imgBox .imgTitle {
     font-size: 1rem;
   }
   .ourProducts .ourProductsPics .imgBox .imgBoxImg {
-    width: 28vw;
-    height: 12vh;
+    width: 85vw;
+    height: 20vh;
+  }
+}
+/*********360x640***********/
+@media only screen and (max-height: 640px) {
+  .main1 {
+    height: 140vh;
+  }
+  .main1 .introCoverPic {
+    width: 85vw;
+  }
+  .main1 .introCoverPic .indexCoverPic {
+    width: 84vw;
   }
 }
 /*********1366x768***********/

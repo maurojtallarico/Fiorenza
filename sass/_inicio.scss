@@ -134,7 +134,7 @@
 /*********360x740***********/
 @media only screen and (max-width: 360px) {
   .main1 {
-    height: 83vh;
+    height: 135vh;
     .introduction {
       width: 85vw;
       height: 45vh;
@@ -149,6 +149,7 @@
         color: $color-verde-oscuro;
         h1 {
           font-size: 1.5rem;
+          margin-top: 6rem;
         }
         p {
           margin-bottom: 0rem;
@@ -156,6 +157,8 @@
       }
       .introCoverPic {
         width: 85vw;
+        margin-bottom: 4rem;
+        margin-left: 0rem;
         .indexCoverPic {
           height: 27vh;
           display: block;
@@ -169,23 +172,37 @@
   .ourProducts {
     width: 85vw;
     height: 30vh;
-    margin-top: 20rem;
+    margin-top: 22rem;
     .ourProductsTitle h1 {
-      margin-right: 0.3rem;
       font-size: 1.6rem;
     }
     .ourProductsPics {
-      height: 12vh;
+      height: 50vh;
       width: 85vw;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
       .imgBox {
-        height: 12vh;
+        height: 20vh;
         .imgTitle {
           font-size: 1rem;
         }
         .imgBoxImg {
-          width: 28vw;
-          height: 12vh;
+          width: 85vw;
+          height: 20vh;
         }
+      }
+    }
+  }
+}
+/*********360x640***********/
+@media only screen and (max-height: 640px) {
+  .main1 {
+    height: 140vh;
+    .introCoverPic {
+      width: 85vw;
+      .indexCoverPic {
+        width: 84vw;
       }
     }
   }
